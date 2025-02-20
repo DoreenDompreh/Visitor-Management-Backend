@@ -37,7 +37,7 @@ class SmsHelper
 
             // Log the success and return the response
             Log::info("SMS sent to {$to}: {$message}");
-            return $this->successResponse('SMS sent successfully', $responseBody);
+            return $this->successResponse('SMS sent effectively', $responseBody);
         } catch (\Exception $e) {
             // Log and return an error response
             Log::error('Failed to send SMS: ' . $e->getMessage());
