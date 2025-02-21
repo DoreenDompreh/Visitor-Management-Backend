@@ -19,7 +19,7 @@ class SmsHelper
     {
         // Validate the inputs
         if (empty($to) || empty($message)) {
-            return $this->errorResponse('Recipient phone number and message are required. Thank you');
+            return $this->errorResponse('Recipient phone number and message are required. Thanks');
         }
 
         try {
